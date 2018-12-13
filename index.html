@@ -1,0 +1,286 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<style>
+.cor1 {
+  background-color: #EEEEE0;
+}
+.cor2 {
+  background-color: #F5F5F5;
+}
+.cor3 {
+  background-color: #FAF0E6;
+}
+.cor4 {
+  background-color: #ADD8E6;
+}
+.cor5 {
+  background-color: #E6E6FA;
+}
+.cor6 {
+  background-color: #8FBC8F;
+}
+.cor7 {
+  background-color: #B4EEB4;
+}
+.cor8 {
+  background-color: #C6E2FF;
+}
+
+
+
+.titulo{
+  font: bold;
+}
+.linha{
+  text-align: center;
+}
+div{
+  margin-top: 30px;
+}
+</style>
+
+<body>
+
+ <script src="resolve.js"></script>
+
+ 
+<div>
+  <table border="0" class="cor1">
+  <tr><th colspan="2"> Querstao 1</th></tr>
+  <tr><td colspan="2" class="descrico"> A distância de A a C <br> passando por B?</td></tr>
+  <tr class="linha">
+    <td>Origem :</td>
+    <td><input size="1" value="a" id="q1a"></td> 
+  </tr>
+  <tr class="linha">
+    <td>Destino :</td>
+    <td><input size="1" value="c" id="q1b"></td> 
+  </tr>
+  <tr class="linha">
+    <td>Passando por:</td>
+    <td><input size="1" value="b" id="q1c"></td> 
+  </tr>
+  <tr class="linha">
+  <td colspan="2">
+    <input TYPE="BUTTON" value="Reponder" onclick="questao1()"; / >
+ </td>
+  </tr>
+  <tr class="linha">
+    <td colspan="2">
+    <textarea rows="8" id="r1"></textarea>
+   </td>
+  </tr>
+</table></div>
+
+
+
+<div>
+  <table border="0" class="cor2">
+  <tr><th colspan="2"> Querstao 2</th></tr>
+  <tr><td colspan="2" class="descrico"> A distância entre A e D?</td></tr>
+  <tr class="linha">
+    <td>Origem :</td>
+    <td><input size="1" value="a" id="q2a"></td> 
+  </tr>
+  <tr class="linha">
+    <td>Destino :</td>
+    <td><input size="1" value="d" id="q2b"></td> 
+  </tr>
+  <tr class="linha">
+  <td colspan="2">
+        <input TYPE="BUTTON" value="Reponder" onclick="questao2()"; / >
+ </td>
+  </tr>
+  <tr class="linha">
+    <td colspan="2">
+    <textarea rows="8" id="r2"></textarea>
+   </td>
+  </tr>
+</table></div>
+
+
+<div>
+  <table border="0" class="cor3">
+  <tr><th colspan="2"> Querstao 3</th></tr>
+  <tr><td colspan="2" class="descrico"> A distância de A a C <br> passando por D?</td></tr>
+  <tr class="linha">
+    <td>Origem :</td>
+    <td><input size="1" value="a" id="q3a"></td> 
+  </tr>
+  <tr class="linha">
+    <td>Destino :</td>
+    <td><input size="1" value="c" id="q3b"></td> 
+  </tr>
+  <tr class="linha">
+    <td>Passando por:</td>
+    <td><input size="1" value="d" id="q3c"></td> 
+  </tr>
+  <tr class="linha">
+  <td colspan="2">
+       <input TYPE="BUTTON" value="Reponder" onclick="questao3()"; / >
+ </td>
+  </tr>
+  <tr class="linha">
+    <td colspan="2">
+    <textarea rows="8" id="r3"></textarea>
+   </td>
+  </tr>
+</table></div>
+
+
+<div>
+  <table border="0" class="cor4">
+  <tr><th colspan="2"> Querstao 4</th></tr>
+  <tr><td colspan="2" class="descrico">
+    O número de rotas <br> saindo de C  e voltando a C <br> com  no máximo 3 paradas?
+  </td></tr>
+  <tr class="linha">
+    <td>Origem :</td>
+    <td><input size="2" value="c" id="q4a"></td> 
+  </tr>
+  <tr class="linha">
+    <td>Destino :</td>
+    <td><input size="2" value="c" id="q4b"></td> 
+  </tr>
+  <tr class="linha">
+    <td>Num max parada(s):</td>
+    <td><input size="2" value="3" id="q4c"></td> 
+  </tr>
+  <tr class="linha">
+  <td colspan="2">
+    <input TYPE="BUTTON" value="Reponder" onclick="questao4()"; / >
+ </td>
+  </tr>
+  <tr class="linha">
+    <td colspan="2">
+    <textarea rows="8" id="r4"></textarea>
+   </td>
+  </tr>
+</table></div>
+
+
+<div>
+  <table border="0" class="cor5">
+  <tr><th colspan="2"> Querstao 5</th></tr>
+  <tr><td colspan="2" class="descrico">
+    O número de rotas entre A e C <br> com no máximo 4 paradas?
+  </td></tr>
+  <tr class="linha">
+    <td>Origem :</td>
+    <td><input size="2" value="a" id="q5a"></td> 
+  </tr>
+  <tr class="linha">
+    <td>Destino :</td>
+    <td><input size="2" value="c" id="q5b"></td> 
+  </tr>
+  <tr class="linha">
+    <td>Passando por:</td>
+    <td><input size="2" value="4" id="q5c"></td> 
+  </tr>
+  <tr class="linha">
+  <td colspan="2">
+    <input TYPE="BUTTON" value="Reponder" onclick="questao5()"; / >
+ </td>
+  </tr>
+  <tr class="linha">
+    <td colspan="2">
+    <textarea rows="8" id="r5"></textarea>
+   </td>
+  </tr>
+</table></div>
+
+
+<div>
+  <table border="0" class="cor6">
+  <tr><th colspan="2"> Querstao 6</th></tr>
+  <tr><td colspan="2" class="descrico">
+    A menor rota (em espaço-tempo) <br> entre A e C?
+  </td></tr>
+  <tr class="linha">
+    <td>Origem :</td>
+    <td><input size="2" value="a" id="q6a"></td> 
+  </tr>
+  <tr class="linha">
+    <td>Destino :</td>
+    <td><input size="2" value="c" id="q6b"></td> 
+  </tr>
+  <tr class="linha">
+  <td colspan="2">
+    <button type="button" onclick="questao6()">Reponder</button>
+ </td>
+  </tr>
+  <tr class="linha">
+    <td colspan="2">
+    <textarea rows="8" id="r6"></textarea>
+   </td>
+  </tr>
+</table></div>
+
+
+<div>
+  <table border="0" class="cor7">
+  <tr><th colspan="2"> Querstao 7</th></tr>
+  <tr><td colspan="2" class="descrico">
+    A menor rota (em espaço-tempo) <br> saindo de B e voltando a B?
+  </td></tr>
+  <tr class="linha">
+    <td>Origem :</td>
+    <td><input size="2" value="b" id="q7a"></td> 
+  </tr>
+  <tr class="linha">
+    <td>Destino :</td>
+    <td><input size="2" value="b" id="q7b"></td> 
+  </tr>
+  <tr class="linha">
+  <td colspan="2">
+    <button type="button" onclick="questao7()">Reponder</button>
+ </td>
+  </tr>
+  <tr class="linha">
+    <td colspan="2">
+    <textarea rows="8" id="r7"></textarea>
+   </td>
+  </tr>
+</table></div>
+
+
+<div>
+  <table border="0" class="cor8">
+  <tr><th colspan="2"> Querstao 8</th></tr>
+  <tr><td colspan="2" class="descrico">
+   O número de diferentes rotas <br> saindo de C  e voltando a C <br> com distância máxima de 300 <br> unidades de espaço-tempo?
+  </td></tr>
+  <tr class="linha">
+    <td>Origem :</td>
+    <td><input size="2" value="c" id="q8a"></td> 
+  </tr>
+  <tr class="linha">
+    <td>Destino :</td>
+    <td><input size="2" value="c" id="q8b"></td> 
+  </tr>
+  <tr class="linha">
+    <td>Passando por:</td>
+    <td><input size="3" value="300" id="q8c"></td> 
+  </tr>
+  <tr class="linha">
+  <td colspan="2">
+    <button type="button" onclick="questao8()">Reponder</button>
+ </td>
+  </tr>
+  <tr class="linha">
+    <td colspan="2">
+    <textarea rows="8" id="r8"></textarea>
+   </td>
+  </tr>
+</table></div>
+
+
+</body>
+
+
+
+</html>
